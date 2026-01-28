@@ -1,10 +1,16 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MessageCircle, Send, Phone, MapPin } from "lucide-react";
+import { Mail, Instagram, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+
+const XIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 const Contact = () => {
   const { toast } = useToast();
@@ -25,35 +31,35 @@ const Contact = () => {
 
   const contactMethods = [
     {
-      icon: MessageCircle,
-      title: "Discord",
-      value: "manivel#0000",
-      description: "Primary contact method",
-      link: "#",
-      color: "text-[#5865F2]",
+      icon: Instagram,
+      title: "Instagram",
+      value: "@mr_black0_028",
+      description: "Follow for updates",
+      link: "https://www.instagram.com/mr_black0_028",
+      color: "text-[#E4405F]",
     },
     {
-      icon: Send,
-      title: "Telegram",
-      value: "@manivel",
-      description: "Quick responses",
-      link: "#",
-      color: "text-[#0088cc]",
+      icon: XIcon,
+      title: "X (Twitter)",
+      value: "@Manivel2811",
+      description: "Quick updates & DMs",
+      link: "https://x.com/Manivel2811",
+      color: "text-white",
     },
     {
       icon: Mail,
       title: "Email",
-      value: "manivel@example.com",
+      value: "manivelthangavel2005@gmail.com",
       description: "Professional inquiries",
-      link: "mailto:manivel@example.com",
+      link: "mailto:manivelthangavel2005@gmail.com",
       color: "text-primary",
     },
     {
       icon: Phone,
       title: "WhatsApp",
-      value: "+1 234 567 8900",
+      value: "+91 8940943614",
       description: "Direct messaging",
-      link: "#",
+      link: "https://wa.me/918940943614",
       color: "text-[#25D366]",
     },
   ];
