@@ -1,25 +1,37 @@
-import { Mail, MessageCircle, Send } from "lucide-react";
+import { Mail, Instagram, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+
+const XIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 const Footer = () => {
   const socialLinks = [
     {
-      name: "Discord",
-      icon: MessageCircle,
-      url: "#",
-      color: "hover:text-[#5865F2]",
+      name: "Instagram",
+      icon: Instagram,
+      url: "https://www.instagram.com/mr_black0_028",
+      color: "hover:text-[#E4405F]",
     },
     {
-      name: "Telegram",
-      icon: Send,
-      url: "#",
-      color: "hover:text-[#0088cc]",
+      name: "X (Twitter)",
+      icon: XIcon,
+      url: "https://x.com/Manivel2811",
+      color: "hover:text-white",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:manivel@example.com",
+      url: "mailto:manivelthangavel2005@gmail.com",
       color: "hover:text-primary",
+    },
+    {
+      name: "WhatsApp",
+      icon: Phone,
+      url: "https://wa.me/918940943614",
+      color: "hover:text-[#25D366]",
     },
   ];
 
